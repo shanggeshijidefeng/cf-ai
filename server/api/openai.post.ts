@@ -11,7 +11,7 @@ export default defineEventHandler(async (event) => {
         messages,
     }
 
-    const res = await fetch(`${process.env.CF_GATEWAY}/openai/${endpoint}`, {
+    const res = await fetch(https://aii.cmiuuqifei.dynv6.net/openai/${endpoint}`, {
         method: 'POST',
         headers: {
             Authorization: key === undefined ? `Bearer ${process.env.OPENAI_API_KEY}` : `Bearer ${key}`,
