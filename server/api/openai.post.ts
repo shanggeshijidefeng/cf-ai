@@ -11,7 +11,7 @@ export default defineEventHandler(async (event) => {
         messages,
     }
 
-     const res = await fetch(`https://aii.cmiuuqifei.dynv6.net`, {
+     const res = await fetch(`https://aii.cmiuuqifei.dynv6.net/v1/chat/completions`, {
         method: 'POST',
         headers: {
             Authorization: key === undefined ? `Bearer ${process.env.OPENAI_API_KEY}` : `Bearer ${key}`,
